@@ -1,0 +1,2 @@
+export const UPDATE_FORM = 'UPDATE_FORM';
+export const UPDATE_USER_INFO = 'UPDATE_USER_INFO';

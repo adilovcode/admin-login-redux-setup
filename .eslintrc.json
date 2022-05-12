@@ -1,0 +1,98 @@
+{
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "globals": {
+      "process": true,
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react",
+      "@typescript-eslint"
+    ],
+    "rules": {
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error"
+      ],
+      "@typescript-eslint/no-explicit-any": [
+        "off"
+      ],
+      "@typescript-eslint/interface-name-prefix": [
+        "error",
+        {
+          "prefixWithI": "always"
+        }
+      ],
+      "@typescript-eslint/member-delimiter-style": [
+        "error",
+        {
+          "multiline": {
+            "delimiter": "none",
+            "requireLast": true
+          },
+          "singleline": {
+            "delimiter": "semi",
+            "requireLast": false
+          }
+        }
+      ],
+      "no-mixed-spaces-and-tabs": [
+        "error",
+        "smart-tabs"
+      ],
+      "@typescript-eslint/camelcase": "off",
+      "react/jsx-wrap-multilines": ["error", {
+        "return": "parens-new-line",
+        "declaration": "parens-new-line",
+        "assignment": "parens-new-line",
+        "arrow": "parens-new-line",
+        "condition": "parens-new-line",
+        "logical": "parens-new-line"
+      }],
+      "react/jsx-boolean-value": ["error", "never"],
+      "react/jsx-fragments": ["error"],
+      "react/jsx-handler-names": ["error"],
+      "react/jsx-no-useless-fragment": ["error"],
+      "react/jsx-first-prop-new-line": ["error", "never"],
+      "react/jsx-tag-spacing": ["error", {
+        "beforeSelfClosing": "always"
+      }],
+      "react/jsx-closing-bracket-location": ["error", {
+        "nonEmpty": "after-props",
+        "selfClosing": "after-props"
+      }],
+      "react/jsx-no-target-blank": ["error"],
+      "react/jsx-max-props-per-line": ["error", {
+        "maximum": 1,
+        "when": "multiline"
+      }]
+    }
+  }
